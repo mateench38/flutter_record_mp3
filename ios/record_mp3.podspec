@@ -20,5 +20,6 @@ A new Flutter plugin.
   s.ios.deployment_target = '8.0'
   s.frameworks = 'AVFoundation'
   s.vendored_libraries = "Classes/Fat-Lame/lib/libmp3lame.a"
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
 
